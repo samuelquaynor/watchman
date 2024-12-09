@@ -17,5 +17,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the script into the container
 COPY main.py .
 
+# Expose port 3000
+EXPOSE 80
+
 # Run the script
 CMD ["python", "main.py"]
